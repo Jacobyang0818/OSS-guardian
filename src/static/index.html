@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSS Guardian - 開源軟體盡職調查</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p>AI 代理人團隊正在進行調查，請稍候...</p>
+            <ul class="steps">
+                <li class="step" id="step-scout">🕵️ 偵察兵正在尋找倉庫...</li>
+                <li class="step" id="step-risk">⚖️ 風險審計師正在評估健康度...</li>
+                <li class="step" id="step-security">🔒 安全審計師正在檢查漏洞...</li>
+                <li class="step" id="step-cto">📝 技術主管正在撰寫報告...</li>
+            </ul>
+    </div>
+
+    <div id="result" class="hidden">
+        <div class="actions">
+            <button id="downloadPdfBtn" class="secondary-btn">📥 下載 PDF 報告</button>
+        </div>
+        <div id="reportContent" class="markdown-body"></div>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 OSS Guardian. Powered by CrewAI & Gemini.</p>
+    </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

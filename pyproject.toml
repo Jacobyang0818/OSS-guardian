@@ -1,0 +1,18 @@
+[project]
+name = "oss_guardian"
+requires-python = ">=3.10"
+description = "Add your description here"
+readme = "README.md"
+version = "1.0.0"
+dependencies = [
+    "crewai[google-genai]",
+    "crewai-tools",
+    "fastapi",
+    "uvicorn",
+    "python-dotenv",
+    "pydantic-settings",
+    "langchain-google-genai", # <-- 解決 LLM 實例化衝突的關鍵
+    "litellm",
+    "markdown>=3.10",
+    "markdown-pdf",
+]
