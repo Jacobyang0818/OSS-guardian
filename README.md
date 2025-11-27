@@ -24,7 +24,7 @@
 graph TD
     User[使用者] --> QueryToFE
     QueryToFE["查詢"] --> Frontend
-    Frontend[前端介面 (HTML/JS)] --> Backend[FastAPI Server]
+    Frontend[前端介面] --> Backend[FastAPI Server]
     Backend -->|啟動| Manager[CrewAI Manager]
     
     subgraph "AI Agent Team (CrewAI)"
@@ -45,6 +45,7 @@ graph TD
     
     CTO -->|Final Report| Backend
     Backend -->|SSE Stream| Frontend
+```
 
 ## 🚀 快速開始
 
