@@ -1,7 +1,7 @@
 # 🛡️ OSS Guardian - AI 驅動的開源軟體盡職調查系統
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/jacob860818/ossguardian)
+[![Docker Pulls](https://img.shields.io/docker/pulls/jacob860818/ossguardian)](https://hub.docker.com/r/jacob860818/ossguardian)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 
 **OSS Guardian** 是一個基於 AI Agent 的自動化開源軟體盡職調查系統。它利用多個專門的 AI 代理人（Agents）協作，針對使用者查詢的開源專案進行全方位的分析，包括受歡迎程度、風險評估、安全性審計，並最終生成一份專業的盡職調查報告。
@@ -111,7 +111,7 @@ SERPER_API_KEY=your_serper_api_key_here
 
 1. **Clone 專案**
    ```bash
-   git clone https://github.com/YourUsername/oss_guardian.git
+   git clone https://github.com/Jacobyang0818/oss_guardian.git
    cd oss_guardian
    ```
 
