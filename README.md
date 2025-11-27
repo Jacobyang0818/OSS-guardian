@@ -63,7 +63,7 @@ graph TD
 ```ini
 # Google Gemini API Key (必要)
 GEMINI_API_KEY=your_gemini_api_key_here
-GEMINI_MODEL_NAME=gemini-1.5-flash
+GEMINI_MODEL_NAME=gemini/gemini-2.5-flash
 
 # Serper Dev Tool API Key (搜尋用，必要)
 SERPER_API_KEY=your_serper_api_key_here
@@ -85,7 +85,7 @@ SERPER_API_KEY=your_serper_api_key_here
    ```bash
    docker run -d -p 8001:8001 \
      -e GEMINI_API_KEY="your_gemini_key" \
-     -e GEMINI_MODEL_NAME="gemini-1.5-flash" \
+     -e GEMINI_MODEL_NAME="gemini/gemini-2.5-flash" \
      -e SERPER_API_KEY="your_serper_key" \
      --name ossguardian jacob860818/ossguardian:latest
    ```
@@ -94,7 +94,7 @@ SERPER_API_KEY=your_serper_api_key_here
    若您希望管理設定檔，請先在當前目錄建立一個 `.env` 檔案，內容如下：
    ```ini
    GEMINI_API_KEY=your_gemini_key
-   GEMINI_MODEL_NAME=gemini-1.5-flash
+   GEMINI_MODEL_NAME=gemini/gemini-2.5-flash
    SERPER_API_KEY=your_serper_key
    ```
    然後執行：
@@ -117,10 +117,6 @@ SERPER_API_KEY=your_serper_api_key_here
 
 2. **安裝依賴**
    ```bash
-   # 安裝 uv (如果尚未安裝)
-   pip install uv
-   
-   # 同步依賴環境
    uv sync
    ```
 
