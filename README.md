@@ -22,15 +22,16 @@
 
 ```mermaid
 graph TD
-    User[使用者] -->|查詢| Frontend[前端介面 (HTML/JS)]
-    Frontend -->|API 請求| Backend[FastAPI Server]
+    User[使用者] --> QueryToFE
+    QueryToFE["查詢"] --> Frontend
+    Frontend[前端介面 (HTML/JS)] --> Backend[FastAPI Server]
     Backend -->|啟動| Manager[CrewAI Manager]
     
     subgraph "AI Agent Team (CrewAI)"
-        Manager --> Scout[🕵️ 偵察兵]
-        Manager --> Risk[⚖️ 風險審計師]
-        Manager --> Security[🔒 安全審計師]
-        Manager --> CTO[📝 技術主管]
+        Manager --> Scout[偵察兵]
+        Manager --> Risk[風險審計師]
+        Manager --> Security[安全審計師]
+        Manager --> CTO[技術主管]
         
         Scout -->|Repo URL| Risk
         Scout -->|Repo URL| Security
@@ -44,7 +45,6 @@ graph TD
     
     CTO -->|Final Report| Backend
     Backend -->|SSE Stream| Frontend
-```
 
 ## 🚀 快速開始
 
