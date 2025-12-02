@@ -4,7 +4,7 @@
 import requests
 import json
 
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "http://127.0.0.1:8001"
 
 print("=" * 70)
 print("🎯 測試物件偵測查詢")

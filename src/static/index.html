@@ -15,26 +15,38 @@
 <body>
     <div class="container">
         <header>
-            <p>AI 代理人團隊正在進行調查，請稍候...</p>
-            <ul class="steps">
-                <li class="step" id="step-scout">🕵️ 偵察兵正在尋找倉庫...</li>
-                <li class="step" id="step-risk">⚖️ 風險審計師正在評估健康度...</li>
-                <li class="step" id="step-security">🔒 安全審計師正在檢查漏洞...</li>
-                <li class="step" id="step-cto">📝 技術主管正在撰寫報告...</li>
-            </ul>
-    </div>
+            <div class="logo">🛡️ OSS Guardian</div>
+            <p class="subtitle">AI 驅動的開源軟體盡職調查系統</p>
+        </header>
 
-    <div id="result" class="hidden">
-        <div class="actions">
-            <button id="downloadPdfBtn" class="secondary-btn">📥 下載 PDF 報告</button>
-        </div>
-        <div id="reportContent" class="markdown-body"></div>
-    </div>
-    </main>
+        <main>
+            <div class="input-group">
+                <input type="text" id="queryInput" placeholder="請輸入想要尋找或評估的開源專案 (例如: python web framework)...">
+                <button id="analyzeBtn">開始分析 🚀</button>
+            </div>
 
-    <footer>
-        <p>&copy; 2025 OSS Guardian. Powered by CrewAI & Gemini.</p>
-    </footer>
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>AI 代理人團隊正在進行調查，請稍候...</p>
+                <ul class="steps">
+                    <li class="step" id="step-scout">🕵️ 偵察兵正在尋找倉庫...</li>
+                    <li class="step" id="step-risk">⚖️ 風險審計師正在評估健康度...</li>
+                    <li class="step" id="step-security">🔒 安全審計師正在檢查漏洞...</li>
+                    <li class="step" id="step-cto">📝 技術主管正在撰寫報告...</li>
+                </ul>
+            </div>
+
+            <div id="result" class="hidden">
+                <div class="actions">
+                    <button id="downloadPdfBtn" class="secondary-btn">📥 下載 PDF 報告</button>
+                </div>
+                <div id="reportContent" class="markdown-body"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 OSS Guardian. Powered by CrewAI & Gemini.</p>
+        </footer>
     </div>
     <script src="/static/script.js"></script>
 </body>
